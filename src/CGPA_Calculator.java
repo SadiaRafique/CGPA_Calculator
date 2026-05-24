@@ -12,7 +12,7 @@ public class CGPA_Calculator {
             double grade = (double) Double.valueOf(sc.nextLine());
             System.out.print("Subject: " + i + " and its Credit Hours: " );
             int credits = Integer.valueOf(sc.nextLine());
-            totalPoints  = 1.0*grade*credits;
+            totalPoints  += 1.0*grade*credits;
             totalCredits += credits;
         }
         double CGPA = totalPoints/totalCredits;
